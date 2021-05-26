@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ref_background"
+    tools:context=".AddSociety">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:background="#8000"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/textAddSociety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Add Society"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editSocietyName"
+            android:layout_below="@id/textAddSociety"
+            android:layout_marginTop="50dp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Society Name "/>
+
+        <EditText
+            android:id="@+id/editChairmanName"
+            android:layout_below="@id/editSocietyName"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Chairman Name "/>
+
+        <EditText
+            android:id="@+id/editSocietyAddress"
+            android:layout_below="@id/editChairmanName"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Society Address "/>
+
+        <EditText
+            android:id="@+id/editSocietyFloors"
+            android:layout_below="@id/editSocietyAddress"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Total Floors "/>
+
+        <EditText
+            android:id="@+id/editSocietyFlats"
+            android:layout_below="@id/editSocietyFloors"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Total Flats "/>
+
+        <EditText
+            android:id="@+id/editSocietyRegNo"
+            android:layout_below="@id/editSocietyFlats"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Society Reg. No"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/editSocietyRegNo"
+            android:id="@+id/bAddSociety"
+            android:textStyle="bold"
+            android:theme="@style/MyButton"
+            android:text="Add Society" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main.com.pillbox.AddBalance">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textPaymentHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Enter your payment details"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Your total payable amount: "
+                android:layout_below="@id/textPaymentHeading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textTotalAmountHeading" />
+
+            <TextView
+                android:id="@+id/textTotalAmount"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTotalAmountHeading"
+                android:layout_centerHorizontal="true"
+                android:text="Total amount"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Amount you want to pay now: "
+                android:layout_below="@id/textTotalAmount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textTotalAmountPaying" />
+
+            <EditText
+                android:id="@+id/textTotalAmountPayingNow"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTotalAmountPaying"
+                android:layout_centerHorizontal="true"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:inputType="number"
+                android:hint="Enter amount"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Enter card number: "
+                android:layout_below="@id/textTotalAmountPayingNow"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textCardNoHeading" />
+
+            <EditText
+                android:id="@+id/textCardNo"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textCardNoHeading"
+                android:layout_centerHorizontal="true"
+                android:hint="Card Number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="12"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Enter CVV number: "
+                android:layout_below="@id/textCardNo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textCvvHeading" />
+
+            <EditText
+                android:id="@+id/editCVVno"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textCvvHeading"
+                android:layout_centerHorizontal="true"
+                android:hint="CVV"
+                android:inputType="number"
+                android:maxLength="3" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/editCVVno"
+                android:id="@+id/btnPayment"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:theme="@style/MyButton"
+                android:text="Proceed" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

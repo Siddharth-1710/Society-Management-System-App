@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ref_background"
+    tools:context=".AddComplaint">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8000"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/textAddComplaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Add Complaint"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/textAddComplaint"
+            android:layout_centerHorizontal="true">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/editOwner"
+            android:layout_below="@id/spinner"
+            android:layout_marginTop="30dp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Owner Name "/>
+
+        <EditText
+            android:id="@+id/editFlatNo"
+            android:layout_below="@id/editOwner"
+            android:layout_marginTop="30dp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Flat No"/>
+
+        <EditText
+            android:id="@+id/editComplaint"
+            android:layout_below="@id/editFlatNo"
+            android:layout_marginTop="30dp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:lines="2"
+            android:layout_height="70dp"
+            android:hint="Write Complaint Here"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/editComplaint"
+            android:id="@+id/bAddComplaint"
+            android:textStyle="bold"
+            android:theme="@style/MyButton"
+            android:text="Add Complaint" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

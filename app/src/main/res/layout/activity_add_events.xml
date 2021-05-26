@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ref_background"
+    tools:context=".AddEvents">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8000"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/textAddEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Add Event"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/textAddEvent"
+            android:layout_centerHorizontal="true">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/textEventName"
+            android:layout_below="@id/spinner"
+            android:layout_marginTop="30dp"
+            android:inputType="text"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Event Name "/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textEventName"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:text="Click Here To Add Date"
+            android:id="@+id/textStartDate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textStartTime"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:layout_below="@id/textStartDate"
+            android:layout_marginTop="30dp"
+            android:text="Click Here To Add Start Time"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:layout_below="@id/textStartTime"
+            android:id="@+id/bAddEvent"
+            android:theme="@style/MyButton"
+            android:text="Add Event" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

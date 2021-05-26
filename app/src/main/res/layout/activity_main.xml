@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ref_background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:focusable="true"
+            android:layout_margin="20dp"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Login"
+                android:layout_marginTop="100dp"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/editUserid"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:drawableLeft="@drawable/smallman"
+                android:drawablePadding="5dp"
+                android:hint="Mobile Number"
+                android:inputType="text"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textView4"/>
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:hint="Password"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:drawablePadding="5dp"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/editUserid"/>
+
+
+            <Button
+                android:id="@+id/btnsignin"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:text="Sign in"
+                android:theme="@style/MyButton"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/editPassword"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:id="@+id/textForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:background="#80000000"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btnsignin"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/btnsignup"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:text="Sign UP"
+                android:theme="@style/MyButton"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textForgotPassword"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#80000000"
+                android:id="@+id/textLinkToAdmin"
+                android:text="Click here to Admin Login"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:layout_below="@+id/btnsignup"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
